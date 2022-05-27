@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Rubik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v20-latin_cyrillic-regular.woff2') format('woff2'), 
+    url('../fonts/rubik-v20-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rubik-v20-latin_cyrillic-500.woff2') format('woff2'), 
+    url('../fonts/rubik-v20-latin_cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/rubik-v20-latin_cyrillic-700.woff2') format('woff2'), 
+    url('../fonts/rubik-v20-latin_cyrillic-700.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-size: 16px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main {
+    background-color: lightgrey;
+}
+
+
+
+.hero-container {
+    padding: 20px 0;
+}
+
+.hero-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hero-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero-item:nth-child(2n) {
+    align-items: flex-end;
+}
+
+.hero-img-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 5px pink;
+}
+
+.hero-img-wrapper::before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 16px);
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: green;
+    border: 2px solid white;
+    
+}
+
+.hero-img-wrapper-offline::before {
+    background-color: red;
+}
+
+.hero-img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.hero-img::before {
+
+}
+
+.hero-mane {
+}
